@@ -320,7 +320,7 @@ $meta_title=""; $meta_description=""; $meta_keywords="";  $image_url=""; $thumb_
                       <label class="formlabel1">Title<span class="redtxt">*</span> </label>
                     </div>
                     <div class="formcontrol2">
-                      <input type="text" name="txtTitle" id="txtTitle" value="<?php echo truncate($title,100);?>" />
+                      <input type="text" name="txtTitle" id="txtTitle" value="<?php echo truncate($title,10000);?>" />
                     </div>
                     
                     <div class="dvFloat">
@@ -328,7 +328,7 @@ $meta_title=""; $meta_description=""; $meta_keywords="";  $image_url=""; $thumb_
                       <label class="formlabel1">Url Title<span class="redtxt">*</span> </label>
                     </div>
                     <div class="formcontrol2" style="padding-top:4px;">
-                      <input type="text" name="txtUrlTitle" id="txtUrlTitle" value="<?php echo truncate($url_title,100);?>" />
+                      <input type="text" name="txtUrlTitle" id="txtUrlTitle" value="<?php echo truncate($url_title,10000);?>" />
                     </div>
                     <div class="dvFloat">
                     <div class="formlabel1">
