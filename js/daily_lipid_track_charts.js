@@ -829,20 +829,21 @@ function GetChartDetails(menu,type)
 
 		if (type=="Prev")
 		{
-			 fromdate = addDays(fromdate,-6);
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
 	
 			
 		}
 		else if (type=="Next")
 		{		
-			 fromdate = addDays(fromdate,6);
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
 		}
 		else
 		{
-			fromdate=new Date();
-			todate = new Date(addDays(fromdate, 6));
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
 	
 		document.getElementById("txttriglyceride_blood_sugar_resultFromDate").value=fromdate;
@@ -1012,22 +1013,22 @@ function GetChartDetails(menu,type)
 
 		if (type=="Prev")
 		{
-			 fromdate = addDays(fromdate,-6);
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
 	
 			
 		}
 		else if (type=="Next")
 		{		
-			 fromdate = addDays(fromdate,6);
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
 		}
 		else
 		{
-			fromdate=new Date();
-			todate = new Date(addDays(fromdate, 6));
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
-	
 		document.getElementById("txthdl_resultFromDate").value=fromdate;
 		document.getElementById("txthdl_resultToDate").value=todate;		
 		
@@ -1237,20 +1238,21 @@ function GetChartDetails(menu,type)
 
 		if (type=="Prev")
 		{
-			 fromdate = addDays(fromdate,-6);
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
 	
 			
 		}
 		else if (type=="Next")
 		{		
-			 fromdate = addDays(fromdate,6);
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
 		}
 		else
 		{
-			fromdate=new Date();
-			todate = new Date(addDays(fromdate, 6));
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
 	
 		document.getElementById("txtldl_resultFromDate").value=fromdate;
@@ -1463,20 +1465,21 @@ function GetChartDetails(menu,type)
 
 		if (type=="Prev")
 		{
-			 fromdate = addDays(fromdate,-6);
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
 	
 			
 		}
 		else if (type=="Next")
 		{		
-			 fromdate = addDays(fromdate,6);
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
 		}
 		else
 		{
-			fromdate=new Date();
-			todate = new Date(addDays(fromdate, 6));
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
 	
 		document.getElementById("txtcholesterol_resultFromDate").value=fromdate;
