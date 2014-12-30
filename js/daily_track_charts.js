@@ -253,37 +253,22 @@ function GetChartDetails(menu,type)
 
 
 		if (type=="Prev")
-
 		{
-
-			 fromdate = addDays(fromdate,-6);
-
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
-
 	
-
 			
-
 		}
-
 		else if (type=="Next")
-
 		{		
-
-			 fromdate = addDays(fromdate,6);
-
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
-
 		}
-
 		else
-
 		{
-
-			fromdate=new Date();
-
-			todate = new Date(addDays(fromdate, 6));
-
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
 
 	
@@ -472,20 +457,21 @@ function GetChartDetails(menu,type)
 
 		if (type=="Prev")
 		{
-			 fromdate = addDays(fromdate,-6);
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
 	
 			
 		}
 		else if (type=="Next")
 		{		
-			 fromdate = addDays(fromdate,6);
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
 		}
 		else
 		{
-			fromdate=new Date();
-			todate = new Date(addDays(fromdate, 6));
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
 	
 		document.getElementById("txtSystolicFromDate").value=fromdate;
