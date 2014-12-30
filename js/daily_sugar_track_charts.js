@@ -688,41 +688,24 @@ function GetChartDetails(menu,type)
 		 
 
 
-
-		if (type=="Prev")
-
+if (type=="Prev")
 		{
-
-			 fromdate = addDays(fromdate,-6);
-
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
-
 	
-
 			
-
 		}
-
 		else if (type=="Next")
-
 		{		
-
-			 fromdate = addDays(fromdate,6);
-
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
-
 		}
-
 		else
-
 		{
-
-			fromdate=new Date();
-
-			todate = new Date(addDays(fromdate, 6));
-
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
-
 	
 		document.getElementById("txtfasting_blood_sugar_resultFromDate").value=fromdate;
 
@@ -913,20 +896,21 @@ function GetChartDetails(menu,type)
 
 		if (type=="Prev")
 		{
-			 fromdate = addDays(fromdate,-6);
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
 	
 			
 		}
 		else if (type=="Next")
 		{		
-			 fromdate = addDays(fromdate,6);
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
 		}
 		else
 		{
-			fromdate=new Date();
-			todate = new Date(addDays(fromdate, 6));
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
 	
 		document.getElementById("txtpost_parandial_resultFromDate").value=fromdate;
@@ -1142,20 +1126,21 @@ function GetChartDetails(menu,type)
 
 		if (type=="Prev")
 		{
-			 fromdate = addDays(fromdate,-6);
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
 	
 			
 		}
 		else if (type=="Next")
 		{		
-			 fromdate = addDays(fromdate,6);
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
 		}
 		else
 		{
-			fromdate=new Date();
-			todate = new Date(addDays(fromdate, 6));
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
 	
 		document.getElementById("txturine_parandial_resultFromDate").value=fromdate;
@@ -1368,20 +1353,21 @@ function GetChartDetails(menu,type)
 
 		if (type=="Prev")
 		{
-			 fromdate = addDays(fromdate,-6);
+			 fromdate = addDays(fromdate,-7);
 			 todate = addDays(fromdate, 6);
 	
 			
 		}
 		else if (type=="Next")
 		{		
-			 fromdate = addDays(fromdate,6);
+			 fromdate = addDays(fromdate,7);
 			 todate = addDays(fromdate, 6);
 		}
 		else
 		{
-			fromdate=new Date();
-			todate = new Date(addDays(fromdate, 6));
+			todate = new Date();
+			fromdate=new Date(addDays(todate, -6));
+			//todate = new Date();
 		}
 
 
